@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
 
   body {
@@ -53,22 +54,6 @@
     width: 30%;
   }
 
-  .btn {
-    background: black;
-    padding: 8px 12px;
-    color: white;
-    border: 2px solid white;
-    font-size: 15px;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-
-  .btn:hover{
-    background: white;
-    color: black;
-    font-size: 17px;
-  }
-
   .textpurple {
     color: rgb(151, 75, 223);
   }
@@ -97,6 +82,58 @@
   h1 {
     font-size: 1.8rem;
   }
+
+  .aboutme{
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .displayimage{
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .displayimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .introduction{
+    width: 50%;
+    border: 2px solid white;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .introduction .button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .btn {
+    background: black;
+    padding: 8px 12px;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .btn:hover{
+    background: white;
+    color: black;
+  }
+  /* 
+
+  
 
   .secondsection .box {
     background: white;
@@ -132,13 +169,116 @@
     color: grey;
     width: 180px;
     font-size: 9px;
-  }
+  } */
 
   .thirdsection {
     max-width: 80vw;
     height: 100vh;
     margin: auto;
   }
+  .projectcontainer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .projectcard{
+    background: #fff;
+    color: black;
+    min-height: 350px;
+    width: 250px;
+    border: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+  }
+  .projectcard>div{
+    margin: 10px 0;
+    height: 120px;
+    width: 100%;
+  }
+  .projectcard>div img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    margin: auto;
+   
+  }
+  .projectcard h3{
+    margin-bottom: 10px;
+  }
+  .projectcard p{
+    text-align: left;
+    height: 100px;
+  }
+  .projectcard button{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    border-radius: 999px;
+    color: white;
+    background-color: rgb(3, 3, 70);
+  }
+
+  .projectcard button:hover{
+    cursor: pointer;
+  }
+
+
+  .fourthsection{
+    max-width: 80vw;
+    height: 100vh;
+    margin: auto;
+  }
+  
+  
+  form{
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  form label{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  form input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* background-color: grey; */
+    font-size: large;
+  }
+
+  form button{
+    margin: 15px auto 0;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(3, 3, 70);
+    
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    font-size: large;
+  }
+
+  form textarea{
+    /* background-color: grey; */
+  }
+
+  form button:hover{
+    background-color: rgb(62, 62, 107);
+  }
+
 
   footer {
     background-color: rgb(29, 29, 39);
@@ -181,3 +321,5 @@
   .footerlinks h2{
     margin-bottom: 30px;
   }
+
+  

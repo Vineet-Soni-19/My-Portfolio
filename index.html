@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
+  <title>Vineet Soni</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
@@ -19,9 +19,9 @@
       <div class="right">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li><a href="My Resume.pdf" target="_blank"><button class="btn">Resume</button></a></li>
         </ul>
       </div>
@@ -37,68 +37,78 @@
         Hi, My name is <span class="textpurple">Vineet</span>
         <div>and I am a </div>
         <span class="textpurple" id="element"></span>
-
-        <div class="buttons">
-          <a href="My Resume.pdf" target="_blank"><button class="btn">Download Resume</button></a>
-          <a href="https://github.com/Vineet-Soni-19" target="_blank"><button class="btn">My Github</button></a>
-        </div>
       </div>
 
       <!-- Developer Image  -->
       <div class="rightsection">
-        <img src="bg.png" alt="Developer">
+        <img src="./images/bg.png" alt="Developer">
       </div>
     </section>
     <hr>
-    <section class="secondsection">
-      <span class="textgrey">What I have done so far</span>
-      <h1>Work Experience</h1>
-      <div class="box">
-        <div class="vertical">
-          <img class="imagetop" src="developer.png" alt="developer">
-          <div class="verticaltitle">
-            HTML Developer (2018-2012)
-          </div>
-          <div class="verticaldesc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
-            libero quod quidem enim inventore hic.
-          </div>
+
+
+    <section class="secondsection" id="about">
+      <h1>About Me</h1>
+      <div class="aboutme">
+        <div class="displayimage">
+          <img src="./images/myimage.jpg" alt="">
         </div>
-        <div class="vertical">
-          <img class="imagetop" src="developer.png" alt="developer">
-          <div class="verticaltitle">
-            HTML Developer (2018-2012)
-          </div>
-          <div class="verticaldesc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
-            libero quod quidem enim inventore hic.
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="imagetop" src="developer.png" alt="developer">
-          <div class="verticaltitle">
-            HTML Developer (2018-2012)
-          </div>
-          <div class="verticaldesc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
-            libero quod quidem enim inventore hic.
-          </div>
-        </div>
-        <div class="vertical">
-          <img class="imagetop" src="developer.png" alt="developer">
-          <div class="verticaltitle">
-            HTML Developer (2018-2012)
-          </div>
-          <div class="verticaldesc">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
-            libero quod quidem enim inventore hic.
+        <div class="introduction">
+          <p>
+            Hello! I'm Vineet Soni, a 21 year old computer science student with a passion of software development. I believe in living life with curiosity, creativity and a continuos desire for growth.
+          I have gained valuable skills in C, Python, C++ and Javascript and enjoy applying them to Projects.
+          Excited to connect wiht like-minded individuals who share my enthusiasm for software development.
+          </p>
+          <div class="button">
+            <a href="My Resume.pdf" target="_blank"><button class="btn">My Resume</button></a>
+          <a href="https://github.com/Vineet-Soni-19" target="_blank"><button class="btn">My Github</button></a>
           </div>
         </div>
       </div>
     </section>
+    
     <hr>
-    <section class="thirdsection">
+
+
+    <section class="thirdsection" id="projects">
       <h1>My Projects</h1>
+      <div class="projectcontainer">
+        <div class="projectcard">
+          <div><img id="projectimage" src="images/cryptopod.png" alt=""></div>
+          <h3 id="projectname">CryptoPod</h3>
+          <p id="projectdescription">CryptoPod is a crypto currency dashboard developed on MERN Stack.</p>
+          <a href="https://github.com/Vineet-Soni-19/CryptoPod-app"><button id="projectlink">Link</button></a>
+          
+        </div>
+        <div class="projectcard">
+          <div><img id="projectimage" src="images/bhojanexpress.png" alt=""></div>
+          <h3 id="projectname">Bhojan Express</h3>
+          <p id="projectdescription">A full functional food ordering website, where use can purchase vegetables and food items.</p>
+          <a href="https://github.com/Vineet-Soni-19/Bhojan-Express"><button id="projectlink">Link</button></a>
+        </div>
+        <div class="projectcard">
+          <div><img id="projectimage" src="images/bazaar.png" alt=""></div>
+          <h3 id="projectname">Bazaar</h3>
+          <p id="projectdescription">An Ecommerce website developed using MERN and Typescript.</p>
+          <a href="https://github.com/Vineet-Soni-19/Bazaar-Ecommerce"><button id="projectlink">Link</button></a>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+    <section class="fourthsection"  id="contact">
+      <h1>Contact Me</h1>
+        <form>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject">
+          <label for="message">Message</label>
+          <textarea name="massage" id="message" cols="60" rows="10"></textarea>
+          <button>Send Message</button>
+        </form>
     </section>
   </main>
   <footer>
@@ -141,3 +151,50 @@
 </body>
 
 </html>
+
+<!-- <section class="secondsection">
+  <span class="textgrey">What I have done so far</span>
+  <h1>Work Experience</h1>
+  <div class="box">
+    <div class="vertical">
+      <img class="imagetop" src="developer.png" alt="developer">
+      <div class="verticaltitle">
+        HTML Developer (2018-2012)
+      </div>
+      <div class="verticaldesc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+        libero quod quidem enim inventore hic.
+      </div>
+    </div>
+    <div class="vertical">
+      <img class="imagetop" src="developer.png" alt="developer">
+      <div class="verticaltitle">
+        HTML Developer (2018-2012)
+      </div>
+      <div class="verticaldesc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+        libero quod quidem enim inventore hic.
+      </div>
+    </div>
+    <div class="vertical">
+      <img class="imagetop" src="developer.png" alt="developer">
+      <div class="verticaltitle">
+        HTML Developer (2018-2012)
+      </div>
+      <div class="verticaldesc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+        libero quod quidem enim inventore hic.
+      </div>
+    </div>
+    <div class="vertical">
+      <img class="imagetop" src="developer.png" alt="developer">
+      <div class="verticaltitle">
+        HTML Developer (2018-2012)
+      </div>
+      <div class="verticaldesc">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+        libero quod quidem enim inventore hic.
+      </div>
+    </div>
+  </div>
+</section> -->
