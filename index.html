@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="left">My Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="My Resume.pdf" target="_blank"><button class="btn">Resume</button></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section class="firstsection">
+
+      <!-- Left Section -->
+      <div class="leftsection">
+        Hi, My name is <span class="textpurple">Vineet</span>
+        <div>and I am a </div>
+        <span class="textpurple" id="element"></span>
+
+        <div class="buttons">
+          <a href="My Resume.pdf" target="_blank"><button class="btn">Download Resume</button></a>
+          <a href="https://github.com/Vineet-Soni-19" target="_blank"><button class="btn">My Github</button></a>
+        </div>
+      </div>
+
+      <!-- Developer Image  -->
+      <div class="rightsection">
+        <img src="bg.png" alt="Developer">
+      </div>
+    </section>
+    <hr>
+    <section class="secondsection">
+      <span class="textgrey">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="box">
+        <div class="vertical">
+          <img class="imagetop" src="developer.png" alt="developer">
+          <div class="verticaltitle">
+            HTML Developer (2018-2012)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+            libero quod quidem enim inventore hic.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="imagetop" src="developer.png" alt="developer">
+          <div class="verticaltitle">
+            HTML Developer (2018-2012)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+            libero quod quidem enim inventore hic.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="imagetop" src="developer.png" alt="developer">
+          <div class="verticaltitle">
+            HTML Developer (2018-2012)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+            libero quod quidem enim inventore hic.
+          </div>
+        </div>
+        <div class="vertical">
+          <img class="imagetop" src="developer.png" alt="developer">
+          <div class="verticaltitle">
+            HTML Developer (2018-2012)
+          </div>
+          <div class="verticaldesc">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe alias assumenda, officia distinctio vero
+            libero quod quidem enim inventore hic.
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section class="thirdsection">
+      <h1>My Projects</h1>
+    </section>
+  </main>
+  <footer>
+    <section class="footerlinks">
+      <div class="footerfirst">
+        <h2 class="textpurple">Vineet</h2>
+        <p>Thank you for visiting my website.</p>
+        <p>Hope to see you again soon.</p>
+      </div>
+      <div class="footersecond">
+        <h3 class="textpurple">RESOURCES</h3>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Portfolio</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="footerthird">
+        <h3 class="textpurple">CONTACT INFORMATION</h3>
+        <a href="#">
+          <span></span>
+          <span class="listtext">vineetsoni304@gmail.com</span>
+        </a>
+      </div>
+      </div>
+    </section>
+    <hr>
+    <div class="footertext">copyright &#xA9; vineetsonidev.com || All rights reserved</div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ["DSA Enthusiast","Web Developer"],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</body>
+
+</html>
