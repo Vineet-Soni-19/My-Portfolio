@@ -271,10 +271,6 @@
     font-size: large;
   }
 
-  form textarea{
-    /* background-color: grey; */
-  }
-
   form button:hover{
     background-color: rgb(62, 62, 107);
   }
